@@ -1,0 +1,169 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-wheel-metadata/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pyre/
+
+# ============================================================
+# Django
+# ============================================================
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media/
+/staticfiles/
+/static_root/
+*.pot
+*.mo
+
+# Django migrations 是否忽略视团队约定；通常建议提交，如需忽略再放开：
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# ============================================================
+# 环境变量 / 密钥（非常重要）
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+secrets.json
+*.secret
+credentials/
+
+# Django SECRET_KEY / PASSWORD_ENCRYPTION_KEY 等本地覆盖
+local.env
+.envrc
+
+# ============================================================
+# Celery
+# ============================================================
+celerybeat-schedule
+celerybeat-schedule.*
+celerybeat.pid
+celeryd.state
+celeryd.log
+celeryd.pid
+*.pid
+
+# ============================================================
+# 日志（项目里 logs/request_timing.log 等）
+# ============================================================
+logs/
+*.log
+!logs/.gitkeep
+!*.log.example
+
+# ============================================================
+# 数据库 / 备份
+# ============================================================
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+*.bak
+backups/
+
+# ============================================================
+# 编辑器 / IDE
+# ============================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================
+# 操作系统
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# 前端（如项目内含 Vue/React 构建产物）
+# ============================================================
+node_modules/
+frontend/dist/
+frontend/build/
+.npm/
+.yarn/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================================
+# Docker / 部署
+# ============================================================
+docker-compose.override.yml
+.docker/
+k8s/secrets*.yaml
+
+# ============================================================
+# 临时文件 / 缓存
+# ============================================================
+tmp/
+.tmp/
+*.tmp
+cache/
+.cache/
+celerybeat-*
+celeryworker-*
+
+# ============================================================
+# 本地调试
+# ============================================================
+notes/
+todo.md
+scratch/
